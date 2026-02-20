@@ -3,7 +3,7 @@
 
 <param name="Hrtz_Rate" value="100" type="int"/>
 
-<node name="signal_generator" pkg="basic_comms" type="signal_generator.py">
+<node name="signal_generator" pkg="coursework" type="signal_generator.py">
 <param name="Resolution" value="1" type="double"/>
 </node>
 
@@ -11,5 +11,6 @@
 <param name="Phasing" value="90" type="double"/>
 <param name="Scaling" value="2" type="double"/>
 </node>
+
 
 </launch>
