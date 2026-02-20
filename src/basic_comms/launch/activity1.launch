@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<param name="Message" value="QPD raza"/>
+
+<group ns ="Group1">
+
+<param name="Message" value="QPD wey"/>
+
+<node name="talker1" pkg="basic_comms" type="talker.py">
+<param name="Message" value="No ha llovido"/>
+</node>
+
+<node name="listener1" pkg="basic_comms" type="listener.py">
+</node>
+</group>
+
+<group ns ="Group2">
+<node name="talker2" pkg="basic_comms" type="talker.py">
+</node>
+
+<node name="listener2" pkg="basic_comms" type="listener.py">
+</node>
+</group>
+
+</launch>
